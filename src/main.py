@@ -20,7 +20,6 @@ def get_int(prompt, min_val=None, max_val=None):
             print("Invalid input. Please enter a valid number.")
 
 def get_nonempty_string(prompt):
-    """Get a non-empty string input."""
     while True:
         value = input(prompt).strip()
         if not value:
@@ -29,7 +28,6 @@ def get_nonempty_string(prompt):
             return value
 
 def get_isbn(prompt, library=None):
-    """Get a valid ISBN, optionally ensuring uniqueness."""
     while True:
         isbn = input(prompt).strip()
         if not isbn:
@@ -40,7 +38,6 @@ def get_isbn(prompt, library=None):
             continue
         return isbn
 
-# ===== Main Program =====
 def main():
     library = Library("City Library")
     librarian = Librarian("Alice", "alice@lib.com", "A001", library)
