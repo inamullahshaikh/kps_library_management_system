@@ -59,7 +59,7 @@ def main():
         choice = input("Enter choice (1-10): ").strip()
 
         if choice == "1":  
-            title = get_nonempty_string("Enter book title: ")
+            title = get_nonempty_string("Enter book title:")
             author = get_nonempty_string("Enter author: ")
             isbn = get_isbn("Enter ISBN: ", library)
             copies = get_int("Enter number of copies: ", min_val=1)
